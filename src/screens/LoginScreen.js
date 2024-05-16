@@ -44,7 +44,7 @@ export default function LoginScreen({ navigation }) {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/a/api/loginPaciente.php', {
+      const response = await axios.post('http://localhost:8080/api/loginPaciente.php', {
         user: email.value,
         password: password.value,
       });

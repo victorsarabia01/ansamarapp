@@ -46,7 +46,7 @@ export default function RegisterScreen({ navigation }) {
 
     //
     try {
-      const response = await axios.post('http://localhost:8080/a/api/registrarUsuario.php', {
+      const response = await axios.post('http://localhost:8080/api/registrarUsuario.php', {
         cedula: cedula.value,
         name: name.value,
         email: email.value,

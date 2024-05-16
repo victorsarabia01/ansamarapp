@@ -24,14 +24,14 @@ export default function Dashboard({ navigation }) {
     
     const GetList = () => {
       //axios.get("https://us-central1-api-dolar.cloudfunctions.net/apiDolar/bcv").then((value) => {
-        axios.get("http://localhost:8080/a/apiConsultorios.php").then((value) => {
+        axios.get("http://localhost:8080/apiConsultorios.php").then((value) => {
         //console.log(value.data);
         setLista(value.data);
       });
     }; 
     const GetList2 = () => {
       //axios.get("https://us-central1-api-dolar.cloudfunctions.net/apiDolar/bcv").then((value) => {
-        axios.get("http://localhost:8080/a/apiOdontologos.php").then((value) => {
+        axios.get("http://localhost:8080/apiOdontologos.php").then((value) => {
         //console.log(value.data);
         setLista2(value.data);
       });
